@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #f9f5f1;
+  color: #2b1f1f;
+}
+
+fieldset {
+  border: 1px solid #aa6868;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  background: #fffdfc;
+}
+
+legend h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #895f5f;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.back-link {
+  margin-top: 28px;
+}
+
+.back-link a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #895f5f;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  background: #734f4f;
+}

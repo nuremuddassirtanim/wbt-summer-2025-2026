@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#716363;
+    color:#8073af;
+    line-height:1.6;
+}
+
+section{
+    padding:60px 20px;
+}
+
+h1,h2,h3,h4{
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:#1e2932;
+    color:white;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#welcome{
+    background:white;
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#0077cc;
+    color:white;
+    border:none;
+    text-decoration:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#005fa3;
+}
+
+#courses{
+    text-align:center;
+    background:#eef5ff;
+}
+
+.course-header{
+    margin-bottom:35px;
+}
+
+.course-card{
+    display:inline-block;
+    width:28%;
+    padding:20px;
+    margin:10px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    vertical-align:top;
+    position:relative;
+    box-shadow:0px 4px 8px rgba(0,0,0,.2);
+}
+
+.course-card:hover{
+    transform:translateY(-5px);
+}
+
+.badge{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:red;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+#notice-board{
+    background:white;
+    text-align:center;
+}
+
+.notice-box{
+    width:80%;
+    max-width:900px;
+    height:220px;
+    overflow:auto;
+    margin:auto;
+    border:2px solid #999;
+    padding:20px;
+    background:#fafafa;
+    text-align:left;
+}
+
+#campus{
+    position:relative;
+    background:#eef5ff;
+    text-align:center;
+}
+
+#campus-image{
+    width:80%;
+    max-width:900px;
+    height:350px;
+    background:#cccccc;
+    margin:auto;
+    border:3px dashed gray;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+    color:#666;
+}
+
+#campus-info{
+    position:absolute;
+    bottom:40px;
+    right:120px;
+
+    width:260px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.3);
+
+    z-index:10;
+}
+
+section:btn2{
+    padding:0;
+}
+
+section:btn2.btn{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    background:green;
+
+    border-radius:30px;
+
+    z-index:999;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+button,
+input,
+
+textarea{
+    font-size:16px;
+}
+
+#welcome{
+    border-bottom:2px solid #ddd;
+}
+
