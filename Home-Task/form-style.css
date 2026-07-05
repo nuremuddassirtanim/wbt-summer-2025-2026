@@ -1,0 +1,119 @@
+* {
+  background-color: #78a4cb;
+  font-family: 'Times New Roman', serif;
+}
+
+#name,
+#id,
+#phone,
+#dob,
+#email,
+#department,
+#semester,
+#comments,
+#address,
+#photo,
+#footer-text {
+  color: rgb(1, 1, 1);
+  border-color: rgb(1, 1, 1);
+}
+
+h1 {
+  color: rgb(1, 1, 1);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid rgb(1, 1, 1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 20px;
+}
+
+.label {
+  display: block;
+  width: 80%;
+  margin-bottom: 5px;
+  color: rgb(1, 1, 1);
+}
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='date'],
+select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.textarea {
+  width: 80%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+input::placeholder {
+  color: rgb(1, 1, 1);
+}
+textarea::placeholder {
+  color: rgb(1, 1, 1);
+}
+.legend {
+  font-weight: bold;
+  color: rgb(1, 1, 1);
+}
+
+.gender-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gender-group > label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.gender-group input[type='radio'] {
+  margin-right: 6px;
+}
+.semester-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.semester-group label {
+  margin-bottom: 0;
+  color: rgb(1, 1, 1);
+}
+.semester-group select {
+  padding: 5px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #000000;
+}
+.button-group {
+  text-align: center;
+}
+button[type='submit'],
+button[type='reset'] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #201f1f;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(1, 1, 1);
+}

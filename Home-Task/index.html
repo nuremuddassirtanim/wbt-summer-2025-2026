@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="form-style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration Form</h1>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <fieldset class="personal-info">
+          <legend><b>Personal Information</b></legend>
+          <label class="label" for="name">Full Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          /><br /><br />
+          <label class="label" for="id">Student ID:</label>
+          <input
+            type="text"
+            name="id"
+            id="id"
+            placeholder="Enter your student ID"
+            required
+          /><br /><br />
+          <label class="label" for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          /><br /><br />
+          <label class="label" for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          /><br /><br />
+          <label class="label" for="dob">Date of Birth:</label>
+          <input type="date" name="dob" id="dob" required />
+          <br /><br />
+          <div class="gender-group">
+            <label>Gender:</label>
+            <label for="male">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                required
+              />
+              Male
+            </label>
+            <label for="female">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                required
+              />
+              Female
+            </label>
+            <label for="other">
+              <input
+                type="radio"
+                name="gender"
+                id="other"
+                value="other"
+                required
+              />
+              Others
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="academic-info">
+          <legend><b>Academic Information</b></legend>
+          <div class="department-group">
+            <label for="department">Department:</label>
+            <select name="department" id="department" required>
+              <option value="">Select Department</option>
+              <option value="CSC">Computer Science & Engineering</option>
+              <option value="EEE">
+                Electrical and Electronics Engineering
+              </option>
+              <option value="BBA">Business Administration</option>
+              <option value="ENGLISH">BA in English</option>
+              <option value="CIVIL">Civil Engineering</option></select
+            ><br /><br />
+          </div>
+          <div class="semester-group">
+            <label for="semester">Semester:</label>
+            <select name="semester" id="semester" required>
+              <option value="">Select Semester</option>
+              <option value="1">1st Semester</option>
+              <option value="2">2nd Semester</option>
+              <option value="3">3rd Semester</option>
+              <option value="4">4th Semester</option>
+              <option value="5">5th Semester</option>
+              <option value="6">6th Semester</option>
+              <option value="7">7th Semester</option>
+              <option value="8">8th Semester</option></select
+            ><br /><br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><b>Skills</b></legend>
+          <div class="skills-group">
+            <label>Select Programming Languages Known: </label><br />
+            <input type="checkbox" name="skills" id="py" value="Python" />
+            <label for="py">Python</label><br />
+            <input type="checkbox" name="skills" id="java" value="Java" />
+            <label for="java">Java</label><br />
+            <input type="checkbox" name="skills" id="cpp" value="C++" />
+            <label for="cpp">C++</label><br />
+            <input type="checkbox" name="skills" id="js" value="JavaScript" />
+            <label for="js">JavaScript</label><br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><b>Additional Information:</b></legend>
+          <b>Address:</b>
+          <br />
+          <textarea
+            class="address"
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+            rows="4"
+            cols="80"
+          ></textarea>
+          <br /><br />
+          <label for="photo">Upload Photo:</label>
+          <input
+            type="file"
+            name="photo"
+            id="photo"
+            accept="image/*"
+          /><br /><br />
+          <b>Comments:</b><br />
+          <textarea
+            class="comments"
+            id="comments"
+            name="comments"
+            placeholder="Enter any additional comments here"
+            rows="4"
+            cols="90"
+            maxlength="200"
+          ></textarea
+          ><br /><br />
+        </fieldset>
+        <div class="button-group">
+          <button type="submit" id="submit-button">Submit</button>
+          <button type="reset" id="reset-button">Reset</button>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy; 2026, Student Registration Form. All rights reserved by NUR E
+        MUDDASSIR TANIM.
+      </p>
+    </footer>
+  </body>
+</html>
