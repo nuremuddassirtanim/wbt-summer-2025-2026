@@ -1,5 +1,5 @@
 * {
-  background-color: #78a4cb;
+  background-color: #ffffff;
   font-family: 'Times New Roman', serif;
 }
 
@@ -27,6 +27,7 @@ h1 {
 
 fieldset {
   border: 2px solid rgb(1, 1, 1);
+  background-color: hsl(205, 79%, 68%);
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -37,6 +38,7 @@ fieldset {
 
 .label {
   display: block;
+  background-color: hsl(205, 79%, 68%);
   width: 80%;
   margin-bottom: 5px;
   color: rgb(1, 1, 1);
@@ -71,13 +73,15 @@ textarea::placeholder {
 
 .gender-group {
   display: flex;
+  background-color: hsl(205, 79%, 68%);
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 20px;
 }
 
 .gender-group > label {
   display: inline-flex;
+  background-color: hsl(205, 79%, 68%);
   align-items: center;
   margin-bottom: 0;
 }
@@ -87,6 +91,7 @@ textarea::placeholder {
 }
 .semester-group {
   display: flex;
+  background-color: hsl(205, 79%, 68%);
   align-items: center;
   gap: 10px;
 }
@@ -108,7 +113,7 @@ button[type='reset'] {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #201f1f;
+  background-color: hsl(0, 0%, 0%);
   color: #ffffff;
   cursor: pointer;
 }
@@ -116,4 +121,34 @@ button[type='reset'] {
   text-align: center;
   margin-top: 20px;
   color: rgb(1, 1, 1);
+}
+.admission-info {
+  text-align: center;
+  background-color: hsl(205, 79%, 68%);
+  margin-top: 20px;
+  color: rgb(1, 1, 1);
+}
+.skills-group {
+  background-color: hsl(205, 79%, 68%);
+}
+.department-group,
+.semester-group {
+  display: flex;
+  background-color: hsl(205, 79%, 68%);
+  align-items: center;
+  gap: 10px;
+}
+.department-group label,
+.semester-group label,
+.skills-group label,
+.address label,
+.photo label {
+  margin-bottom: 0;
+  width: 100px;
+  background-color: hsl(205, 79%, 68%);
+  color: rgb(1, 1, 1);
+}
+#photo::file-selector-button {
+  background-color: hsl(205, 79%, 68%);
+  cursor: pointer;
 }
