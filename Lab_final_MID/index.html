@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Club Membership Registration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Club Membership Registration Form</h1>
+      <form id="registrationForm" action>
+        <label for="name">First Name</label>
+        <input type="text" id="name" placeholder="Enter your first name" />
+        <small id="nameError" class="error"></small>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" placeholder="Enter your last name" />
+        <small id="lastnameError" class="error"></small>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@gmail.com" />
+        <small id="emailError" class="error"></small>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+        <small id="passwordError" class="error"></small>
+
+        <label>Gender</label>
+
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+        </div>
+        <small id="genderError" class="error"></small>
+
+        <label>Interested Clubs</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="computer" name="club" value="Debate Club" />
+          <label for="computer">Computer Club</label>
+
+          <input type="checkbox" id="sports" name="club" value="Sports Club" />
+          <label for="sports">Sports Club</label>
+
+          <input type="checkbox" id="debate" name="club" value="Debate Club" />
+          <label for="debate">Debate Club</label>
+
+          <input type="checkbox" id="music" name="club" value="Music Club" />
+          <label for="music">Arts & Performing Club</label>
+
+          <input type="checkbox" id="ieee" name="club" value="IEEE Club" />
+          <label for="ieee">IEEE Club</label>
+        </div>
+        <small id="clubError" class="error"></small>
+
+        <label for="category">Club Category</label>
+        <select id="category" name="category">
+          <option value="">Select a Category</option>
+          <option value="Computer-Club">Computer Club</option>
+          <option value="Music">Arts & Performing Club</option>
+          <option value="Sports">Sports Club</option>
+          <option value="Ieee">IEEE Club</option>
+          <option value="Debate">Debate Club</option>
+        </select>
+        <small id="categoryError" class="error"></small>
+
+        <label for="comments">Why do you want to join? </label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Tell us about yourself..."
+        ></textarea>
+        <small id="commentsError" class="error"></small>
+
+        <button type="submit" value="Submit" id="submitBtn">Submit</button>
+
+        <script src="script.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
