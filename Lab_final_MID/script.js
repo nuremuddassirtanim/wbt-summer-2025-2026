@@ -30,7 +30,11 @@ form.addEventListener('submit', function (event) {
     showError(firstName, 'nameError', 'First name is required.');
     valid = false;
   } else if (!/^[A-Za-z ]+$/.test(firstName.value.trim())) {
-    showError(firstName, 'nameError', 'Only alphabetic characters are allowed.');
+    showError(
+      firstName,
+      'nameError',
+      'Only alphabetic characters are allowed.',
+    );
     valid = false;
   } else {
     showSuccess(firstName);
@@ -40,7 +44,11 @@ form.addEventListener('submit', function (event) {
     showError(lastName, 'lastnameError', 'Last name is required.');
     valid = false;
   } else if (!/^[A-Za-z ]+$/.test(lastName.value.trim())) {
-    showError(lastName, 'lastnameError', 'Only alphabetic characters are allowed.');
+    showError(
+      lastName,
+      'lastnameError',
+      'Only alphabetic characters are allowed.',
+    );
     valid = false;
   } else {
     showSuccess(lastName);
